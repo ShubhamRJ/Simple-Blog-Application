@@ -9,4 +9,4 @@ MongoDB, ExpressJS, HTML, SemanticUI
 3. Run MongoDB server in the background using the command "mongod" in cmd/terminal without quotes.
 4. Open cmd/terminal and cd into the directory with the unzipped folder.
 5. Run command "node app.js" without quotes.
-The website will open in the default browser.
+6. Open browser and type "localhost:3000".
