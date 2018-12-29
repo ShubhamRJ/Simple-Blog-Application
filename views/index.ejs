@@ -1,0 +1,28 @@
+<% include header %>
+	<div class="ui main text container">
+		<div class="ui huge header">
+			Personal Blogging App
+		</div>
+		<div class="ui top  attached segment">
+			<div class="ui divided items">
+				<% blogs.forEach(function(blog){ %>
+					<div class="ui centered fluid image">
+						<img src="<%= blog.image %>">
+					</div>
+					<div class="item">
+						<div class="content">
+							<a class="header"href="/blogs/<%= blog._id %>">
+								<%= blog.title %></a>
+							<div class="meta">
+								<span><%= blog.created %></span>
+							</div>
+							<div class="description">
+								<p> <%= blog.body.substring(0,100) %> ... <a href="/blogs/<%= blog._id %>"> Read More</a></p>	
+							</div>
+						</div>
+					</div>
+				<% }) %>		
+			</div>
+		</div>
+	</div>
+<% include footer %>
